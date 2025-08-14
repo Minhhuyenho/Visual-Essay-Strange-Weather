@@ -1,0 +1,80 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --purple: #6B5B95;
+}
+
+body {
+  background-color: var(--white);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  max-width: 800px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.banner {
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 1em;
+}
+
+.banner-title {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.banner-subtitle {
+  font-size: 1em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.text-block {
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.image-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+@media (min-width: 50em) {
+  .image-pair {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .image-pair img {
+    width: 49%;
+  }
+}
+
+.credits {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.credits a {
+  word-break: break-word;
+}
